@@ -7,7 +7,7 @@ This repository automatically builds [llama.cpp](https://github.com/ggml-org/lla
 The official llama.cpp repository does not provide pre-built CUDA binaries. This repository fills that gap by:
 
 - Building llama.cpp with CUDA support for multiple CUDA toolkit versions
-- Supporting a wide range of NVIDIA GPU architectures (compute capability 7.5+)
+- Supporting a wide range of NVIDIA GPU architectures (compute capability 7.0+)
 - Automatically tracking upstream llama.cpp releases
 - Providing ready-to-use binaries via GitHub releases
 
@@ -84,7 +84,7 @@ cat VERSION.txt
 
 ## System Requirements
 
-- NVIDIA GPU with compute capability 7.5 or higher
+- NVIDIA GPU with compute capability 7.0 or higher
 - Appropriate NVIDIA driver for your CUDA version:
   - CUDA 12.8+: Driver >= 570.15
 - Linux x86_64 or aarch64 (Ubuntu 22.04 compatible)

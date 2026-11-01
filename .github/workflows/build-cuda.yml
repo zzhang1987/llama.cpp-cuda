@@ -73,7 +73,7 @@ jobs:
             # CPU arch, so the same list applies to both amd64 and arm64
             # builds. Relevant aarch64 GPU contexts (Grace Hopper, Grace
             # Blackwell, DGX Spark) are covered by sm_90 / sm_100 / sm_120.
-            architectures: '75-virtual;80-virtual;86-virtual;89-virtual;90-virtual;100-virtual;120-virtual'
+            architectures: '70-virtual;75-virtual;80-virtual;86-virtual;89-virtual;90-virtual;100-virtual;120-virtual'
     
     steps:
       - name: Checkout
@@ -260,7 +260,7 @@ jobs:
             **Commit:** ${{ needs.check-release.outputs.release_hash }}
             
             ## CUDA Versions
-            - CUDA 12.8 - GPU compute capabilities: 7.5, 8.0, 8.6, 8.9, 9.0, 10.0, 12.0
+            - CUDA 12.8 - GPU compute capabilities: 7.0, 7.5, 8.0, 8.6, 8.9, 9.0, 10.0, 12.0
 
             ## Host architectures
             Tarballs are published per host CPU architecture (Linux):
@@ -268,6 +268,7 @@ jobs:
             - `-arm64.tar.gz` — aarch64 (Grace Hopper / Grace Blackwell / DGX Spark / Ampere Altra)
 
             ## GPU compute capability reference
+            - 7.0: Tesla V100
             - 7.5: Tesla T4, RTX 20xx series, Quadro RTX
             - 8.0: A100
             - 8.6: RTX 3000 series

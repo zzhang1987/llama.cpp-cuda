@@ -23,6 +23,11 @@ if torch.cuda.is_available():
 
 ## Compute Capability Breakdown
 
+### 7.0 (Volta)
+- NVIDIA Tesla V100
+
+**CUDA Support:** 12.4+ (deprecated in CUDA 13, not included in 13.x builds)
+
 ### 7.5 (Turing)
 - Tesla T4
 - GeForce RTX 2060, 2070, 2080, 2080 Ti
@@ -92,6 +97,7 @@ nvidia-smi
 
 | GPU Architecture | Compute Cap. | CUDA 12.4 | CUDA 12.6 | CUDA 12.8 | CUDA 12.9 | CUDA 13.0 |
 |-----------------|--------------|-----------|-----------|-----------|-----------|-----------|
+| Volta           | 7.0          | ✅        | ✅        | ✅        | ✅        | ⚠️        |
 | Turing          | 7.5          | ✅        | ✅        | ✅        | ✅        | ✅        |
 | Ampere (DC)     | 8.0          | ✅        | ✅        | ✅        | ✅        | ✅        |
 | Ampere          | 8.6          | ✅        | ✅        | ✅        | ✅        | ✅        |

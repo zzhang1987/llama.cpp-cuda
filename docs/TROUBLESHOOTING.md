@@ -178,7 +178,7 @@ nvidia-smi --query-gpu=compute_cap --format=csv,noheader
 
 **Solution:**
 Ensure you downloaded a build that supports your architecture:
-- Compute 7.5, 8.0, 8.6, 8.9, 9.0: Any CUDA version
+- Compute 7.0, 7.5, 8.0, 8.6, 8.9, 9.0: Any CUDA version
 - Compute 10.0 (Blackwell): CUDA 12.8+ only
 
 ### Server Issues
