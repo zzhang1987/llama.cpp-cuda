@@ -207,11 +207,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      # The tag points at a fresh empty commit whose tree carries the workflow
-      # file from the run's checkout. If that checkout is older than the
-      # default-branch tip, GitHub sees the tag push as a workflow change and
-      # blocks GitHub App pushes without this scope.
-      workflows: write
     steps:
       - name: Checkout
         uses: actions/checkout@v7
